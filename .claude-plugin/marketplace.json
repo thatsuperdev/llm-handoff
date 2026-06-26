@@ -1,0 +1,11 @@
+{
+  "name": "llm-handoff marketplace",
+  "description": "Cross-LLM handoff skills and tools by thatsuperdev",
+  "plugins": [
+    {
+      "name": "llm-handoff",
+      "description": "Cross-LLM context handoff — creates a complete handover.md so any LLM can continue your work without mistakes. Auto-triggers before context compaction.",
+      "source": "./plugins/llm-handoff"
+    }
+  ]
+}

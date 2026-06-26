@@ -1,0 +1,12 @@
+{
+  "name": "llm-handoff",
+  "version": "1.0.0",
+  "description": "Cross-LLM context handoff — creates a complete handover.md so any LLM can continue your work without mistakes. Auto-triggers before context compaction.",
+  "author": {
+    "name": "thatsuperdev"
+  },
+  "homepage": "https://github.com/thatsuperdev/llm-handoff",
+  "repository": "https://github.com/thatsuperdev/llm-handoff",
+  "license": "MIT",
+  "keywords": ["handoff", "handover", "context", "session", "continuity", "cross-llm", "compaction"]
+}

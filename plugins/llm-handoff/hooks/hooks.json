@@ -1,0 +1,27 @@
+{
+  "description": "llm-handoff hooks: write git/branch skeleton before compaction, then enforce the LLM completes all reasoning sections before stopping. Output is handover.md — a portable document the user takes to their next LLM session.",
+  "hooks": {
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/scripts/precompact-write-skeleton.sh\"",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/scripts/stop-enforce-completion.sh\"",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}
