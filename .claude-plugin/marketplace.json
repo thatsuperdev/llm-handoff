@@ -1,5 +1,6 @@
 {
-  "name": "llm-handoff marketplace",
+  "name": "llm-handoff-marketplace",
+  "owner": { "name": "thatsuperdev" },
   "description": "Cross-LLM handoff skills and tools by thatsuperdev",
   "plugins": [
     {
